@@ -21,5 +21,10 @@ libraryDependencies ++= Seq(
 dependencyOverrides += "org.scala-lang.modules" %% "scala-xml" % "2.1.0"
 dependencyOverrides += "org.scala-lang.modules" %% "scala-parser-combinators" % "2.1.1"
 
+javaOptions ++= Seq(
+  "--add-opens",
+  "java.base/java.lang=ALL-UNNAMED"
+)
+
 
 
