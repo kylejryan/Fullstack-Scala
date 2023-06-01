@@ -20,6 +20,9 @@ libraryDependencies ++= Seq(
 
 dependencyOverrides += "org.scala-lang.modules" %% "scala-xml" % "2.1.0"
 dependencyOverrides += "org.scala-lang.modules" %% "scala-parser-combinators" % "2.1.1"
+dependencyOverrides ++= Seq(
+  "com.google.inject" % "guice" % "5.1.0",
+  "com.google.inject.extensions" % "guice-assistedinject" % "5.1.0")
 
 javaOptions ++= Seq(
   "--add-opens",
